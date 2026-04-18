@@ -43,6 +43,9 @@
         <mxCell id="j8VfhBQfDFmeBZZCwQxb-33" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.api_gateway;" value="" vertex="1">
           <mxGeometry height="110" width="80" x="805" y="960" as="geometry" />
         </mxCell>
+        <mxCell id="j8VfhBQfDFmeBZZCwQxb-34" parent="1" style="swimlane;" value="Backend MicroServices" vertex="1">
+          <mxGeometry height="160" width="450" x="630" y="1180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
