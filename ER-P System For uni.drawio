@@ -1,50 +1,178 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="5lCJvOSi-eInW7PdWC9j">
-    <mxGraphModel dx="1022" dy="530" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+<mxfile host="Electron" modified="2026-04-20T09:12:47.823Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" version="22.0.3" etag="aEgt797Fm3NpVklzFKxw" type="device">
+  <diagram name="University ERP Architecture" id="university-erp-v2">
+    <mxGraphModel dx="2072" dy="1212" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-8" parent="1" style="sketch=0;verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;fillColor=#000000;align=center;outlineConnect=0;pointerEvents=1;shape=mxgraph.citrix2.devices;" value="" vertex="1">
-          <mxGeometry height="50" width="113.3" x="788.35" y="310" as="geometry" />
+        <mxCell id="vpc-bg" value="Private Network / VPC" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];shape=mxgraph.cisco.sites.generic_building;sketch=0;html=1;pointerEvents=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;strokeWidth=2;verticalLabelPosition=top;verticalAlign=bottom;align=left;fontSize=13;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="770" width="2080" height="1380" as="geometry" />
         </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-27" edge="1" parent="1" source="j8VfhBQfDFmeBZZCwQxb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="j8VfhBQfDFmeBZZCwQxb-23">
+        <mxCell id="vpc-rect" value="Private Network / VPC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9f9f9;strokeColor=#666666;dashed=1;strokeWidth=2;dashPattern=8 4;verticalAlign=top;fontSize=13;fontStyle=1;fontColor=#555555;align=left;spacingLeft=14;spacingTop=8;" parent="1" vertex="1">
+          <mxGeometry x="420" y="750" width="2090" height="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="user-academic" value="Academic Staff" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="60" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="user-mgmt" value="University Management" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="820" y="60" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="user-student" value="Students" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="60" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="user-partner" value="External Partners" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="1360" y="60" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lb" value="Load Balancer" style="shape=mxgraph.network.switch;html=1;pointerEvents=1;dashed=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;fontStyle=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="930" y="240" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-academic-lb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0050ef;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="user-academic" target="lb" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-28" edge="1" parent="1" source="j8VfhBQfDFmeBZZCwQxb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="j8VfhBQfDFmeBZZCwQxb-23">
+        <mxCell id="e-mgmt-lb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0050ef;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="user-mgmt" target="lb" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-21" parent="1" style="shape=mxgraph.networks2.icon;aspect=fixed;fillColor=#EDEDED;strokeColor=#000000;gradientColor=#5B6163;network2IconShadow=1;network2bgFillColor=none;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;network2Icon=mxgraph.networks2.load_balancer;network2IconW=0.86;network2IconH=0.76;" value="Load Balancer" vertex="1">
-          <mxGeometry height="38" width="43" x="823.5" y="540" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-22" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="100" width="370" x="660" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-12" parent="j8VfhBQfDFmeBZZCwQxb-22" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-          <mxGeometry height="100" width="370" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-13" parent="j8VfhBQfDFmeBZZCwQxb-22" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Students" vertex="1">
-          <mxGeometry height="60" width="30" x="300" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-14" parent="j8VfhBQfDFmeBZZCwQxb-22" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;University Management &lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="30" x="170" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-19" parent="j8VfhBQfDFmeBZZCwQxb-22" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Academic Staff" vertex="1">
-          <mxGeometry height="60" width="30" x="30" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-23" parent="1" style="swimlane;" value="Front-End (React Server)" vertex="1">
-          <mxGeometry height="160" width="220" x="735" y="750" as="geometry" />
-        </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-25" edge="1" parent="1" source="j8VfhBQfDFmeBZZCwQxb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.487;entryY=-0.059;entryDx=0;entryDy=0;entryPerimeter=0;" target="j8VfhBQfDFmeBZZCwQxb-21">
+        <mxCell id="e-student-lb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0050ef;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="user-student" target="lb" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-26" edge="1" parent="1" source="j8VfhBQfDFmeBZZCwQxb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="j8VfhBQfDFmeBZZCwQxb-23">
+        <mxCell id="e-partner-lb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0050ef;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="user-partner" target="lb" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-33" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.api_gateway;" value="" vertex="1">
-          <mxGeometry height="110" width="80" x="805" y="960" as="geometry" />
+        <mxCell id="9cR_VLtd7lyM1pe395Bu-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="frontend" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="j8VfhBQfDFmeBZZCwQxb-34" parent="1" style="swimlane;" value="Backend MicroServices" vertex="1">
-          <mxGeometry height="160" width="450" x="630" y="1180" as="geometry" />
+        <mxCell id="9cR_VLtd7lyM1pe395Bu-3" value="API Calls" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9cR_VLtd7lyM1pe395Bu-2">
+          <mxGeometry x="0.2955" y="-3" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="frontend" value="&lt;b&gt;Front-End&lt;/b&gt;&lt;br/&gt;React / Next.js" style="shape=mxgraph.mockup.containers.browser;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=11;align=center;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="980" y="350" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br/&gt;Nginx / Kong" style="shape=mxgraph.cisco.routers.generic_router;html=1;pointerEvents=1;dashed=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=11;fontStyle=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="510" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gw-iam" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#b85450;strokeWidth=1.5;dashed=1;" parent="1" source="gateway" target="iam" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-lb-fe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lb" target="frontend" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="academic-group-bg" value="Core Academic Services" style="swimlane;startSize=28;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#023467;rounded=1;arcSize=4;" parent="1" vertex="1">
+          <mxGeometry x="450" y="880" width="900" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-sis" value="&amp;nbsp;&amp;nbsp;🧑&amp;nbsp;Student&amp;nbsp;Info&amp;nbsp;(SIS)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Student records &amp;amp; profiles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;" parent="academic-group-bg" vertex="1">
+          <mxGeometry x="20" y="50" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-enroll" value="📅 Enrollment&#xa;Course reg &amp; timetables" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="academic-group-bg" vertex="1">
+          <mxGeometry x="220" y="50" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-progression" value="🎓 Academic Progression&#xa;Grades, GPA &amp; transcripts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="academic-group-bg" vertex="1">
+          <mxGeometry x="410" y="50" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-workflow" value="⛳ Workflow Engine&#xa;Approvals &amp; automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="academic-group-bg" vertex="1">
+          <mxGeometry x="610" y="50" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-docs" value="📁 Document Mgmt&#xa;Files, forms &amp; archives" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="academic-group-bg" vertex="1">
+          <mxGeometry x="800" y="50" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-group-bg" value="Administrative Services" style="swimlane;startSize=28;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#3a006f;rounded=1;arcSize=4;" parent="1" vertex="1">
+          <mxGeometry x="1400" y="880" width="720" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-finance" value="💰 Finance &amp; Fees&#xa;Payments &amp; billing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="admin-group-bg" vertex="1">
+          <mxGeometry x="20" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-hr" value="💼 HR &amp; Payroll&#xa;Staff &amp; contracts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="admin-group-bg" vertex="1">
+          <mxGeometry x="200" y="50" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-facility" value="🏢 Facility Mgmt&#xa;Rooms &amp; resources" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="admin-group-bg" vertex="1">
+          <mxGeometry x="370" y="50" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-notify" value="🔔 Notifications&#xa;Email, SMS &amp; push" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="admin-group-bg" vertex="1">
+          <mxGeometry x="540" y="50" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka" value="📨 Message Broker (Kafka / Event Bus)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2.5;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="820" y="1150" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-academic-kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d6b656;strokeWidth=1.5;dashed=1;dashPattern=6 3;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="academic-group-bg" target="kafka" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-admin-kafka" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d6b656;strokeWidth=1.5;dashed=1;dashPattern=6 3;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="admin-group-bg" target="kafka" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-group-bg" value="AI &amp; Intelligence Layer" style="swimlane;startSize=28;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontStyle=1;fontSize=12;fontColor=#1a4301;rounded=1;arcSize=4;" parent="1" vertex="1">
+          <mxGeometry x="1620" y="1110" width="700" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-ai-chat" value="💬✨ AI Chat Service&#xa;LLM-powered assistant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="ai-group-bg" vertex="1">
+          <mxGeometry x="20" y="50" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-rec" value="💡 Recommendation Engine&#xa;Course &amp; career suggestions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="ai-group-bg" vertex="1">
+          <mxGeometry x="225" y="50" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-analytics" value="📊 Predictive Analytics&#xa;Dropout risk &amp; insights" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=11;align=center;verticalAlign=middle;" parent="ai-group-bg" vertex="1">
+          <mxGeometry x="445" y="50" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e-kafka-ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;strokeWidth=1.5;dashed=1;dashPattern=6 3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kafka" target="ai-group-bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="db-postgres" value="🗄 PostgreSQL&#xa;Academic &amp; Student DB" style="shape=mxgraph.flowchart.database;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="500" y="1350" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="db-admin" value="🗄 PostgreSQL&#xa;Admin &amp; Finance DB" style="shape=mxgraph.flowchart.database;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="700" y="1350" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="db-redis" value="⚡ Redis Cache&#xa;Sessions &amp; hot data" style="shape=mxgraph.flowchart.database;html=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="910" y="1350" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="db-vector" value="🧊 Vector Database&#xa;Embeddings for AI" style="shape=mxgraph.flowchart.database;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="1350" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="db-s3" value="📦 Object Storage&#xa;Files &amp; media (S3)" style="shape=mxgraph.flowchart.database;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=11;fontStyle=0;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="1350" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e-kafka-postgres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=1.5;dashed=1;dashPattern=6 3;" parent="1" source="kafka" target="db-postgres" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-kafka-admin-db" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#9673a6;strokeWidth=1.5;dashed=1;dashPattern=6 3;" parent="1" source="kafka" target="db-admin" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-kafka-redis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d6b656;strokeWidth=1.5;dashed=1;dashPattern=6 3;" parent="1" source="kafka" target="db-redis" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-kafka-vector" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;strokeWidth=1.5;dashed=1;dashPattern=6 3;" parent="1" source="kafka" target="db-vector" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ai-vector" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;strokeWidth=1.5;" parent="1" source="ai-group-bg" target="db-vector" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gw-academic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="gateway" target="academic-group-bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gw-admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#9673a6;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="gateway" target="admin-group-bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-gw-ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#82b366;strokeWidth=2;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="gateway" target="ai-group-bg" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-bg" value="Legend" style="swimlane;startSize=24;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=12;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="2200" y="850" width="240" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-blue" value="Core Academic Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=11;align=left;spacingLeft=8;" parent="legend-bg" vertex="1">
+          <mxGeometry x="10" y="36" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-purple" value="Administrative Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.5;fontSize=11;align=left;spacingLeft=8;" parent="legend-bg" vertex="1">
+          <mxGeometry x="10" y="80" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-green" value="AI &amp; Intelligence Layer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=11;align=left;spacingLeft=8;" parent="legend-bg" vertex="1">
+          <mxGeometry x="10" y="124" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-dashed" value="Event / Async message flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.5;fontSize=11;align=left;spacingLeft=8;dashed=1;dashPattern=6 3;" parent="legend-bg" vertex="1">
+          <mxGeometry x="10" y="168" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-solid" value="Synchronous request flow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=11;align=left;spacingLeft=8;" parent="legend-bg" vertex="1">
+          <mxGeometry x="10" y="212" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" value="&lt;b&gt;IAM / Auth&lt;/b&gt;&lt;br&gt;JWT" style="shape=mxgraph.cisco.firewalls.firewall;html=1;pointerEvents=1;dashed=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;fontStyle=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="300" width="80" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
